@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anand Kaushik</title>
+</head>
+<body>
+ 
+ <div class="header"> 
+
+
+
+    <div class="main"> 
+        <div class="navbar"> 
+            <ul>
+        <li><a class="active" href="#home" id="nav">Home</a></li> 
+        <li><a href="#project" id="nav1">Projects</a></li> 
+        <li><a href="#services" id="nav2">Services</a></li> 
+        <li><a href="#about-us" id="nav3">About Me</a></li> 
+        <li><a href="#contact-me" id="nav4">Contact Me</a></li> 
+        
+    </ul>
+      
+    </div>
+   <img src="twitter.png" id="menubtn">
+    <div class="img">
+<img src="human1.png" alt="sorry not loading">
+</div>  
+          
+<div class="left-text">
+<p><span class="hello-text">HELLO </span></p>
+
+<p >
+    THIS IS <span class="name">ANAND</span> AND </p>
+    <p>I AM A PROFESSIONAL</p>
+     <p class="webd">WEB DEVELOPER</p>
+</div>
+ </div>
+</div>
+
+<!--PROJECT SECTION-->
+
+<section class="project" id="project">
+<div class="project-div">
+<div class="text-heading">
+    <h1 class="heading">Projects</h1>
+</div>
+<div class="project-image">
+    <div class="projects">
+<a href="#"><img src="notes.jpg"></a>
+
+<a href="#"><img src="proj.png"></a>
+<a href="#"><img src="project2.png"></a>
+</div>
+
+</div>
+<div class="project-title">
+<h2 class="t1">NOTES UPLOAD WEBSITE</h2>
+<h2  class="t2">CONSTRUCTION WEBSITE</h2>
+<h2  class="t3">UNIVERSITY WEBSITE</h2>
+</div>
+</div>
+
+</section>
+
+<!--SERVICES SECTION-->
+
+<section class="services" id="services">
+<div class="services-div">
+<div>
+<h1 class="heading">Services</h1>
+</div>
+<div class="all-services">
+    <div class="image-grid">
+<img src="app-development1.jpg">
+<p>App development</p>
+</div>
+<div class="image-grid">
+<img src="web1.jpg">
+<p>Website development</p>
+</div>
+<div class="image-grid">
+<img src="seo.jpg">
+<p>Seo</p>
+</div>
+<div class="image-grid">
+    <img src="web1.jpg">
+    <p>Desktop app development</p>
+    </div>
+    <div class="image-grid">
+        <img src="a.jpg">
+        <p>UI Design using Figmat</p>
+        </div>
+        <div class="image-grid">
+            <img src="app-development1.jpg">
+            <p>Video Editing</p>
+            </div>
+</div>
+</div>
+</section>
+
+<!--about us-->
+<section class="about-us" id="about-us">
+<div class="aboutus-div">
+<h1 class="heading">About Me</h1>
+<div class="details">
+<div class="left-image">
+<img src="about-me.jpg">
+</div>
+<div class="icons">
+<a href="#"><img src="facebook.png"></a>
+<a href="#"><img src="twitter.png"></a>
+<a href="#"><img src="linkedin.png"></a>
+<a href="#"><img src="instagram.png"></a>
+</div>
+<div class="right-text">
+<h2>My name is <span class="myname">ANAND</span></h2>
+<p>I am a creative designer, </p>
+<p>backend web DEVELOPER,</p>
+<p>freelancer and Youtuber</p>
+
+<button><a href="AnandResume.pdf" download="AnandResume">DOWNLOAD CV</a></button>
+</div>
+</div>
+</div>
+</section>
+<!--CONTACTME-->
+
+
+<section class="contact-me" id="contact-me">
+<div class="contact-div">
+    <h1 class="heading">Contact Me</h1>
+<div class="right-img">
+    <img src="regster.png">
+</div>
+<form action="" method="POST">
+<div class="form-contact">
+<input type="text" name="nameofperson" class="input-box" required placeholder="FULL NAME">
+<input type="email" name="username" class="input-box" required placeholder="EMAIL-ID">
+<textarea class="message" name="message" rows="4" cols="50" placeholder="MESSAGE"></textarea>
+<button class="send">SEND</button>
+</div>
+</form>
+</div> 
+
+</section>
+
+<script>
+
+var menuList = document.getElementById("nav");
+var menuList1 = document.getElementById("nav1");
+var menuList2 = document.getElementById("nav2");
+var menuList3 = document.getElementById("nav3");
+var menuList4 = document.getElementById("nav4");
+var menubtn = document.getElementById("menubtn");
+
+
+menuList.style.display= "block";
+menuList1.style.display= "block";
+menuList2.style.display= "block";
+menuList3.style.display= "block";
+menuList4.style.display= "block";
+menubtn.onclick = function(){
+    if(menuList.style.display=="none"){
+        menuList.style.display="block";
+        menuList1.style.display= "block";
+        menuList2.style.display= "block";
+        menuList3.style.display= "block";
+        menuList4.style.display= "block";
+
+    }else{
+        menuList.style.display="none"
+        menuList1.style.display= "none";
+        menuList2.style.display= "none";
+        menuList3.style.display= "none";
+        menuList4.style.display= "none";
+
+    }
+}
+    
+
+// function togglemenu(){
+//     if(menuList.style.maxHeight == "0px"){
+        
+//         menuList.style.maxHeight = "130px";
+// }else{
+//     menuList.style.maxHeight = "0px";
+// }
+// }
+
+</script>
+
+
+
+
+</body>
+</html>
